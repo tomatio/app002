@@ -8,8 +8,7 @@ import java.io.IOException;
 @WebFilter(filterName = "FilterLogin")
 public class FilterLogin implements Filter {
     public static final String LOGIN_PAGE="start.jsp";
-    String username;
-    String password;
+
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         username = req.getParameter("userName");
         password = req.getParameter("password");
